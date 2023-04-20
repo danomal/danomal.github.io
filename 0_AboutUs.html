@@ -49,53 +49,21 @@
 
     /* CSS for main element */
 
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 80px;
-	  
-    }
-
-    .achievements .work {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;  
-    }
-
-    .achievements .work i {
-      width: fit-content;
-      font-size: 50px;
-      color: #5edaf0;
-      border-radius: 50%;
-      border: 2px solid #5edaf0;
-      padding: 12px;
-    }
-
-    .achievements .work .work-heading {
-      font-size: 20px;
-      color: #5edaf0;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .achievements .work .work-text {
-      font-size: 15px;
-      color: #585858;
-      margin: 10px 0;
-    }
 
     .about-me {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 40px 80px;
-      border-top: 2px solid #eeeeee;
-	  
+      border-top: 2px solid #5edaf0;
+	  background-color: #F8F8F8;
     }
-
+	
+	.about-me-text {
+		width: 85%;
+	}
+	
+	
     .about-me img {
       width: 500px;
       max-width: 100%;
@@ -104,10 +72,16 @@
     }
 	
 	.about-me-text h1 {
-      font-family: 'Sriracha', cursive;
-      font-size: 60px;
-      color: #5edaf0;
-      margin: 0;
+		font-family: 'Sriracha', cursive;
+		margin: 0;
+		text-align: center;
+		font-size: 70px;
+		font-weight: 600;
+		background-image: linear-gradient(to bottom, #5edaf0, #e6ccff);
+		color: transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
+		
     }
 
     .about-me-text h2 {
@@ -122,31 +96,58 @@
       color: #5edaf0;
       text-transform: uppercase;
       margin: 0;
+	  padding-top: 15px;
     }
 
     .about-me-text p {
-      font-size: 15px;
+      font-size: 20px;
       color: #585858;
       margin: 10px 0;
     }
 	
 	.about-me-text ul {
-      font-size: 15px;
+      font-size: 20px;
       color: #585858;
       margin: 10px 0;
     }
 	
+	.about-me-text ol {
+      font-size: 20px;
+      color: #585858;
+      margin: 10px 0;
+    }
+	
+	.about-me-text li{
+		padding-top: 10px;
+		align: center;
+		
+	}
+	
+	.about-me-text-reasons li{
+		padding-top: 10px;
+		align: center;
+		
+		
+	}
+	
 	.row {
-		display: flex;
-		border-style: double;
-		border-color: #5edaf0;
-		background-color: #eeeeee;
+		display: flex;				
 	}
 
 	.column {
 		flex: 33.33%;
 		padding: 5px;
-		background-color: #eeeeee
+		background-color: #F8F8F8;
+	}
+	
+	.column img{
+		border-radius: 50%
+	}
+	
+	.about-me-text hr {
+		height: 12px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(94, 218, 240, 0.5);
 	}
 
     /* CSS for footer */
@@ -211,12 +212,14 @@
       <div class="about-me-text">
         <h1>About Us</h1>
 		<h3>History</h3>
+		<hr>
         <p>The first 100 Women Who Care chapter was founded in 2006 by Karen Dunigan in Jackson, MI. 
 			Since then, other chapters have been launched throughout the U.S. and in other countries as well.
 			The Naperville chapte began in February, 2009 with 29 members. 
 			The goal was to reach a membership of 100, whichwas reached and surpassed in the spring
 			of 2013. Today the membership numbers over 140, more than four times what it was at that first meeting in 2009.</p>
 		<h3>How it Works</h3>
+		<hr>
 		<ul>
 			<li>We meet 4 times a year--in Feb., May, Aug., and Nov.--on the 3rd Tuesday of the month. </li>
 			
@@ -235,7 +238,9 @@
 			<li>And the best part is the knowledge that you are part of a circle of women who--like you-want to make a difference and actually do so.</li>
 		</ul>
 		<h3>10 Reasons to Join</h3>
-		<ul>
+		<hr>
+		<div class="about-me-text-reasons">
+		<ol type = "1">
 			<li>Our meetings last just one hour.</li>
 			<li>If you choose to stay after the meeting, you'll enjoy great Italian food, good conversation and more than a few laughs.</li>
 			<li>You'll have opportunities to attend our check-presenting meetings and tour the facilities of local charites, followed by lunch with friends.</li>
@@ -246,9 +251,10 @@
 			<li>You'll experience that good feeling that comes from knowing you are genuinely making a difference.</li>
 			<li>You'll about local organizations that serve the needs of others. </li>
 			<li>You will be sharing some of what you have, knowing that your donations will go to worthy causes in your community.</li>
-		</ul>
+		</ol>
+		</div>
       </div>
-	  </div>
+	</div>
 	  <div class="row">
 		  <div class="column">
 			<img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/313015300_5537708769599196_1959426987059666921_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=C7pw2YBmXQsAX9xCibr&_nc_ht=scontent-ord5-1.xx&oh=00_AfA7uOWoPhDbkwtsSLc31XeJKWBEZFz6z3F6JHR1Ij_q8g&oe=644357AA" alt="100+ Women" style="width:100%"> 
